@@ -30,15 +30,22 @@ while (remainingLetters > 0) {
 
     } else if (isInArray(guess, playedLetters) == true) {
         alert("Already tried this letter " + playedLetters);
-    } else {
+    }
+
+        else {
         for (j = 0; j < solution.length; j++) {
             if (guess == solution[j]) {
+
                 reponseArr[j] = guess;
+
                 playedLetters.push(guess);
+
                 if (!isInArray(guess, reponseArr)){
                     remainingLetters--;
                 }
+
                 console.log(reponseArr);
+
                 console.log(remainingLetters);
                 
             }
