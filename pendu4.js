@@ -4,12 +4,13 @@ let solution = words[Math.floor(Math.random() * words.length)].split('');
 
 let solutionString = solution.join('');
 // console.log(solutionString);
-
+				
 let reponseArr = [];
 let reponseString = reponseArr.join('');
 let keepPlaying = true;
 let remainingLetters = solution.length;
 let playedLetters = [];
+
 
 // console.log(solution.length);
 
